@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      /* The task
+         1. Following the example of the function `greetWorld`,
+         write a function `greetUser` that takes one argument (name) and alerts "Hello <name>!".
+         2. Write function `askNameAndGreetUser` that prompts the user for their name
+         and then calls the function `greetUser` with the name as an argument.
+         All event listeners are already provided for you, you just need to write the functions.
+         Clicking on the "Greet the world" button will call the `greetWorld` function.
+         Clicking on the "Greet the user" button will call the `askNameAndGreetUser` function.
+         Relevant reading:
+         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions#passing_arguments
+         https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#creating_a_string
+         https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#concatenating_strings
+         https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
+         https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
+      */
+
+      const greetWorld = () => {
+        alert('Hello world!')
+      }
+
+      const greetUser = (name) => {
+        // Should alert "Hello <name>!" using the name argument
+
+        }
+
+      const askNameAndGreetUser = () => {
+        // Should prompt the user for their name and then call the greetUser function with the name as an argument
+
+      }
+
+      // Event listeners
+      window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('world').addEventListener('click', greetWorld)
+        document.getElementById('user').addEventListener('click', askNameAndGreetUser)
+      })
+  </script>
+  </head>
+  <body>
+    The task
+    <br>
+    1. Following the example of the function `greetWorld`,
+    <br>
+    write a function `greetUser` that takes one argument (name) and alerts "Hello <name>!".
+    <br>
+    2. Write function `askNameAndGreetUser` that prompts the user for their name
+    <br>
+    and then calls the function `greetUser` with the name as an argument.
+    <br>
+    <br>
+    All event listeners are already provided for you, you just need to write the functions.
+    <br>
+    Clicking on the "Greet the world" button will call the `greetWorld` function.
+    <br>
+    Clicking on the "Greet the user" button will call the `askNameAndGreetUser` function.
+    <br>
+    (both are already done for you)
+    <br>
+    <br>
+    Relevant reading:
+    <br>
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions#passing_arguments">Functions: passing arguments</a>
+    <br>
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#creating_a_string">Strings: creating a string</a>
+    <br>
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#concatenating_strings">Strings: concatenating string</a>
+    <br>
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt">prompt</a>
+    <br>
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert">alert</a>
+    <br>
+    <br>
+    <button id="world">Greet the world</button>
+    <button id="user">Greet the user</button>
+  </body>
+</html>
